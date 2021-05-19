@@ -7,11 +7,52 @@
 
   <title>망충토끼</title>
 
+  <meta property="og:title" content="망충토끼">
+  <meta property="og:description" content="망충한 그 토끼가 숨어있는 곳">
+  <meta property="og:image" content="/assets/images/open-graph.png">
+  <meta property="og:url" content="mang-to.github.io">
+
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="mask-icon" href="favicon-mask.svg" color="#000">
+
   <link rel="stylesheet" href="/assets/styles/index.css">
 </head>
 <body>
-  <div id="WIP">
-    <img src="/assets/images/wip.svg" alt="공사 중" class="image">
-  </div>
+  <!-- * App header * -->
+  <header>
+    <a href="/" class="brand">
+      <img src="/assets/images/logo.svg" aria-hidden class="logo">
+      <span class="title">망충토끼</span>
+    </a>
+    <nav>
+      <a href="#intro" class="nav-item">소개</a>
+      <a href="#illust" class="nav-item">일러스트</a>
+      <a href="#goods" class="nav-item">굿즈</a>
+    </nav>
+  </header>
+  <main>
+    <!-- * Banner * -->
+    <article aria-label="제목 배너" id="banner">
+      <img src="/assets/images/moon.svg" aria-hidden class="moon">
+      <div class="contents">
+        <h1>망충토끼</h1>
+        <hr>
+        <span class="desc">망충한 그 토끼가 숨어있는 곳</span>
+      </div>
+    </article>
+    <!-- * Profiles * -->
+    <article aria-label="캐릭터 정보" id="profiles">
+      <img src="/assets/images/profiles.svg" alt="망토 그림">
+      <h2>망토</h2>
+      <div aria-label="사용된 색" class="palette">
+        <span aria-label="분홍색" class="color pink">#f4628f</span>
+        <span aria-label="초록색" class="color green">#5ab129</span>
+      </div>
+    </article>
+    <!-- * Introduce * -->
+    <article id="intro">
+      <h2 class="carrot-title">소개</h2>
+    </article>
+  </main>
 </body>
 </html>
