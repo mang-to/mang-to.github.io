@@ -112,6 +112,75 @@
         </div>
       </div>
     </article>
+    <!-- * Goods * -->
+    <article id="goods">
+      <h2 class="carrot-title">굿즈</h2>
+      <p class="paragraph">
+        귀여운 망토를 담은 일러스트에요<br>
+        망충토끼의 일러스트는 마음껏 소장하셔도 좋아요<br>
+        더 많은 일러스트는 인스타그램에서 확인해주세요 :)
+      </p>
+      <div id="goodsSlider" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="/assets/images/slide_0.png" alt="스티커" class="image">
+              <span class="name">스티커</span>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/images/slide_1.png" alt="아크릴 키링" class="image">
+              <span class="name">아크릴 키링</span>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/images/slide_2.png" alt="핀버튼" class="image">
+              <span class="name">핀버튼</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- * Information * -->
+    <article id="info">
+      <img src="/assets/images/info.svg" alt="귀여운 망토" class="image">
+      <div class="desc">
+        <h2 class="title">망충토끼 공식 인스타그램</h2>
+        <p class="paragraph">
+          일러스트와 다양한 소식 들은<br>
+          앞으로 이곳에서 만날 수 있어요!
+        </p>
+        <span class="social instagram">인스타그램: mangchungtokki</span>
+        <a href="https://www.instagram.com/mangchungtokki/" class="button">
+          방문하기
+        </a>
+      </div>
+    </article>
   </main>
+  <footer id="footer">
+    <div class="left">
+      <div class="brand">
+        <img src="/assets/images/logo.svg" alt="망토 로고" class="logo">
+        <span class="name">망충토끼</span>
+      </div>
+      <span class="email">문의하기: mangchungtokki@gmail.com</span>
+    </div>
+    <div class="right">
+      <div class="link-list">
+        <a href="https://github.com/mang-to/mang-to.github.io" class="link gitbub">
+          <img src="/assets/images/github.svg" alt="깃허브">
+        </a>
+        <a href="https://www.instagram.com/mangchungtokki/" class="link gitbub">
+          <img src="/assets/images/instagram.svg" alt="인스타그램">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    new Glide("#goodsSlider", {
+      perView: 1.75,
+      focusAt: "center",
+      gap: 16,
+      rewind: false
+    }).mount();
+  </script>
 </body>
 </html>
