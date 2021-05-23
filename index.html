@@ -7,11 +7,180 @@
 
   <title>망충토끼</title>
 
+  <meta property="og:title" content="망충토끼">
+  <meta property="og:description" content="망충한 그 토끼가 숨어있는 곳">
+  <meta property="og:image" content="/assets/images/open-graph.png">
+  <meta property="og:url" content="mang-to.github.io">
+
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="mask-icon" href="favicon-mask.svg" color="#000">
+  
   <link rel="stylesheet" href="/assets/styles/index.css">
+  <link rel="stylesheet" href="/plugins/glide-3.4.1/dist/css/glide.core.min.css">
+  
+  <script src="/plugins/glide-3.4.1/dist/glide.min.js"></script>
 </head>
 <body>
-  <div id="WIP">
-    <img src="/assets/images/wip.svg" alt="공사 중" class="image">
-  </div>
+  <!-- * App header * -->
+  <header>
+    <a href="/" class="brand">
+      <img src="/assets/images/logo.svg" aria-hidden class="logo">
+      <span class="title">망충토끼</span>
+    </a>
+    <nav>
+      <a href="#intro" class="nav-item">소개</a>
+      <a href="#illust" class="nav-item">일러스트</a>
+      <a href="#goods" class="nav-item">굿즈</a>
+    </nav>
+  </header>
+  <main>
+    <!-- * Banner * -->
+    <article aria-label="제목 배너" id="banner">
+      <img src="/assets/images/moon.svg" aria-hidden class="moon">
+      <div class="contents">
+        <h1>망충토끼</h1>
+        <hr>
+        <span class="desc">망충한 그 토끼가 숨어있는 곳</span>
+      </div>
+    </article>
+    <!-- * Profiles * -->
+    <article aria-label="캐릭터 정보" id="profiles">
+      <img src="/assets/images/profiles.svg" alt="망토 그림">
+      <h2>망토</h2>
+      <div aria-label="사용된 색" class="palette">
+        <span aria-label="분홍색" class="color pink">#f4628f</span>
+        <span aria-label="초록색" class="color green">#5ab129</span>
+      </div>
+    </article>
+    <!-- * Introduce * -->
+    <article id="intro">
+      <h2 class="carrot-title">소개</h2>
+      <div class="group character">
+        <img src="/assets/images/intro_0.svg" alt="마법사 토끼" class="image">
+        <p class="paragraph">
+          하찮음과 귀여움을 가진 토끼!<br>
+          <br>
+          역동적이고 활발한 토끼!<br>
+          <br>
+          망충하지만 사랑스러운 토끼!<br>
+          <br>
+          망충토끼랍니다
+        </p>
+      </div>
+      <div class="group design">
+        <p class="paragraph">
+          망충한 토끼라는 뜻을 가진<br>
+          <br>
+          망토라는 이름을 가지고 있어요<br>
+          <br>
+          당근을 정말 좋아해서<br>
+          <br>
+          당근 꼭지 모양 스카프를<br>
+          <br>
+          항상 두르고 다닌답니다
+        </p>
+        <img src="/assets/images/intro_1.svg" alt="마법사 토끼" class="image">
+      </div>
+      <p class="footer">망토의 많은 활동 기대해주세요 :D</p>
+    </article>
+    <!-- * Illust * -->
+    <article id="illust">
+      <h2 class="carrot-title">일러스트</h2>
+      <p class="paragraph">
+        귀여운 망토를 담은 일러스트에요<br>
+        망충토끼의 일러스트는 마음껏 소장하셔도 좋아요<br>
+        더 많은 일러스트는 인스타그램에서 확인해주세요 :)
+      </p>
+      <div class="gallery">
+        <div class="item width-2">
+          <img src="/assets/images/gallery_0.png" alt="당근 훔치는 망토" class="image">
+        </div>
+        <div class="item width-2">
+          <img src="/assets/images/gallery_1.png" alt="초승달 망토" class="image">
+        </div>
+        <div class="item width-2 height-2">
+          <img src="/assets/images/gallery_2.png" alt="그림 그리는 망토" class="image">
+        </div>
+        <div class="item height-2">
+          <img src="/assets/images/gallery_3.png" alt="벚꽃과 망토" class="image">
+        </div>
+        <div class="item">
+          <img src="/assets/images/gallery_4.png" alt="반죽하는 망토" class="image">
+        </div>
+        <div class="item">
+          <img src="/assets/images/gallery_5.png" alt="정글 속 망토" class="image">
+        </div>
+      </div>
+    </article>
+    <!-- * Goods * -->
+    <article id="goods">
+      <h2 class="carrot-title">굿즈</h2>
+      <p class="paragraph">
+        귀여운 망토를 담은 일러스트에요<br>
+        망충토끼의 일러스트는 마음껏 소장하셔도 좋아요<br>
+        더 많은 일러스트는 인스타그램에서 확인해주세요 :)
+      </p>
+      <div id="goodsSlider" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="/assets/images/slide_0.png" alt="스티커" class="image">
+              <span class="name">스티커</span>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/images/slide_1.png" alt="아크릴 키링" class="image">
+              <span class="name">아크릴 키링</span>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/images/slide_2.png" alt="핀버튼" class="image">
+              <span class="name">핀버튼</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- * Information * -->
+    <article id="info">
+      <img src="/assets/images/info.svg" alt="귀여운 망토" class="image">
+      <div class="desc">
+        <h2 class="title">망충토끼 공식 인스타그램</h2>
+        <p class="paragraph">
+          일러스트와 다양한 소식 들은<br>
+          앞으로 이곳에서 만날 수 있어요!
+        </p>
+        <span class="social instagram">인스타그램: mangchungtokki</span>
+        <a href="https://www.instagram.com/mangchungtokki/" class="button">
+          방문하기
+        </a>
+      </div>
+    </article>
+  </main>
+  <footer id="footer">
+    <div class="left">
+      <div class="brand">
+        <img src="/assets/images/logo.svg" alt="망토 로고" class="logo">
+        <span class="name">망충토끼</span>
+      </div>
+      <span class="email">문의하기: mangchungtokki@gmail.com</span>
+    </div>
+    <div class="right">
+      <div class="link-list">
+        <a href="https://github.com/mang-to/mang-to.github.io" class="link gitbub">
+          <img src="/assets/images/github.svg" alt="깃허브">
+        </a>
+        <a href="https://www.instagram.com/mangchungtokki/" class="link gitbub">
+          <img src="/assets/images/instagram.svg" alt="인스타그램">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    new Glide("#goodsSlider", {
+      perView: 1.75,
+      focusAt: "center",
+      gap: 16,
+      rewind: false
+    }).mount();
+  </script>
 </body>
 </html>
