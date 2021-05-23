@@ -334,6 +334,7 @@ nav > .nav-item {
   margin-left: 32px;
   background-image: url("/assets/images/carrot-flip.svg");
 }
+/* Medium size */
 @media screen and (max-width: 768px) {
   .carrot-title {
     font-size: 36px;
@@ -344,6 +345,7 @@ nav > .nav-item {
     height: 40px;
   }
 }
+/* Small size */
 @media screen and (max-width: 425px) {
   .carrot-title {
     font-size: 24px;
@@ -362,3 +364,164 @@ nav > .nav-item {
 }
 
 /** Introduce **/
+#intro {
+  margin-bottom: 320px;
+}
+#intro > .carrot-title {
+  margin-bottom: 200px;
+}
+#intro > .group {
+  display: flex;
+  justify-content: center;
+
+  font-size: 36px;
+}
+#intro > .group:not(:last-child) {
+  margin-bottom: 24px;
+}
+#intro > .character > .image {
+  margin-right: 64px;
+}
+#intro > .character > .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+#intro > .design > .image {
+  margin-left: 12px;
+}
+#intro > .design > .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#intro > .footer {
+  margin-top: 64px;
+  font-size: 32px;
+  text-align: center;
+}
+/* Large size */
+@media screen and (max-width: 1024px) {
+  #intro > .carrot-title {
+    margin-bottom: 72px;
+  }
+  #intro > .group {
+    font-size: 22px;
+  }
+  #intro > .group > .image {
+    width: 256px;
+  }
+  #intro > .character > .image {
+    margin-right: 32px;
+  }
+  #intro > .footer {
+    font-size: 20px;
+  }
+}
+/* Medium size */
+@media screen and (max-width: 768px) {
+  #intro {
+    margin-bottom: 160px;
+  }
+  #intro > .group {
+    font-size: 16px;
+  }
+  #intro > .group > .image {
+    width: 140px;
+  }
+}
+/* Small size */
+@media screen and (max-width: 425px) {
+  #intro > .group {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 12px;
+  }
+  #intro > .group > .image {
+    max-width: 140px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  #intro > .footer {
+    font-size: 14px;
+  }
+}
+
+/** Illust **/
+#illust {
+  margin-bottom: 256px;
+}
+#illust > .carrot-title {
+  margin-bottom: 64px;
+}
+#illust > .paragraph {
+  margin-bottom: 128px;
+
+  font-size: 36px;
+  line-height: 1.75em;
+  text-align: center;
+}
+#illust > .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+
+  width: 100%;
+  padding: 0 40px;
+}
+#illust > .gallery > .item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#illust > .gallery > .item > .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#illust > .gallery > .width-2 {
+  grid-column: span 2;
+}
+#illust > .gallery > .height-2 {
+  grid-row: span 2;
+}
+/* Large size */
+@media screen and (max-width: 1024px) {
+  #illust {
+    margin-bottom: 128px;
+  }
+  #illust > .paragraph {
+    margin-bottom: 96px;
+
+    font-size: 28px;
+  }
+}
+/* Medium size */
+@media screen and (max-width: 768px) {
+  #illust > .paragraph {
+    margin-bottom: 64px;
+    font-size: 18px;
+  }
+  #illust > .gallery {
+    gap: 12px;
+    padding: 0 24px;
+  }
+}
+/* Small size */
+@media screen and (max-width: 425px) {
+  #illust > .carrot-title {
+    margin-bottom: 32px;
+  }
+  #illust > .paragraph {
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  #illust > .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    padding: 0 16px;
+  }
+}
